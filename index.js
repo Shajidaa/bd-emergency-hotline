@@ -25,9 +25,8 @@ for (const loveBtn  of loveBtns) {
   
 })
 }
+
 //call buttons 
-
-
 
 const callBtns=getClassElement('call-btn');
 for (const callBtn  of callBtns) {
@@ -36,7 +35,7 @@ for (const callBtn  of callBtns) {
         const cardTitle=callBtn.parentNode.parentNode.children[1].children[0].innerText;
 
         const cardSubTitle=callBtn.parentNode.parentNode.children[1].children[1].innerText ;
-        
+
         const serviceNumber=callBtn.parentNode.parentNode.children[2].children[0].innerText ;
 
 
@@ -51,6 +50,45 @@ for (const callBtn  of callBtns) {
             let coins=totalCoins-20;
            getElement('total-coins').innerText=coins;
            alert(`📞 calling ${cardSubTitle} ${serviceNumber}`);
+
+       //time
+
+      const localTime={
+    
+       time:new Date().toLocaleTimeString(),
+        }
+   
+           const historyCartContainer=getElement('cart-container');
+
+           const newCart=document.createElement('div');
+           newCart.innerHTML=`
+            <div class="flex justify-between items-center bg-[#f5fff6] p-4 mt-4">
+            <div>
+              <h1
+                id="service-title"
+                class="font-semibold font-[roboto] text-[18px] text-[#111111]"
+              >
+                ${cardTitle}
+              </h1>
+              <p
+                id="service-number "
+                class="font-normal font-[madurai] text-[18px] text-[#5C5C5C]"
+              >
+                ${serviceNumber}
+              </p>
+            </div>
+            <div>
+              <p
+                id="local-time"
+                class="font-normal font-[madurai] text-[18px] text-[#5C5C5C]"
+              >
+                ${localTime.time}
+              </p>
+            </div>
+          </div>
+        
+           `
+           historyCartContainer.append(newCart);
         
         }
         
