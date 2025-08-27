@@ -25,6 +25,53 @@ for (const loveBtn  of loveBtns) {
   
 })
 }
+//call buttons 
+
+
+
+const callBtns=getClassElement('call-btn');
+for (const callBtn  of callBtns) {
+    callBtn.addEventListener('click',function () {
+        
+        const cardTitle=callBtn.parentNode.parentNode.children[1].children[0].innerText;
+
+        const cardSubTitle=callBtn.parentNode.parentNode.children[1].children[1].innerText ;
+        
+        const serviceNumber=callBtn.parentNode.parentNode.children[2].children[0].innerText ;
+
+
+        let totalCoins=Number(getElement('total-coins').innerText);
+             if (totalCoins<20) {
+             return alert (`You don't have enough coins.`);
+              
+
+    
+        }
+        
+            let coins=totalCoins-20;
+           getElement('total-coins').innerText=coins;
+           alert(`📞 calling ${cardSubTitle} ${serviceNumber}`);
+        
+        }
+        
+
+        
+       
+            
+            
+       
+        
+        
+        
+        
+
+        
+        
+    )
+    
+}
+
+
 
 
 
