@@ -88,25 +88,34 @@ for (const callBtn  of callBtns) {
           </div>
         
            `
+
            historyCartContainer.append(newCart);
         
         }
         
-
-        
-       
-            
-            
-       
-        
-        
-        
-        
-
-        
-        
     )
     
+}
+
+           //clear function
+            getElement('clear-btn').addEventListener('click',function(){
+                        const historyCartContainer=getElement('cart-container');
+                        historyCartContainer.innerText='';
+                   })
+
+    //copy function
+
+ const copyBtns= getClassElement('copy-btn');
+for (const copyBtn  of  copyBtns) {
+    copyBtn.addEventListener('click',function () {
+    const serviceNumber=copyBtn.parentNode.parentNode.children[2].children[0].innerText ;
+    navigator.clipboard.writeText(serviceNumber)
+    .then ( function(){
+        alert(serviceNumber)
+    })
+    getElement('copy-main-btn').innerText
+}
+    )
 }
 
 
