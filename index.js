@@ -113,7 +113,9 @@ for (const copyBtn  of  copyBtns) {
     .then ( function(){
         alert(serviceNumber)
     })
-    getElement('copy-main-btn').innerText
+   
+    getElement('copy-main-btn').innerText++;
+    
 }
     )
 }
