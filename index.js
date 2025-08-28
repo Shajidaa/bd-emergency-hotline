@@ -72,7 +72,7 @@ for (const callBtn  of callBtns) {
               </h1>
               <p
                 id="service-number "
-                class="font-normal font-[hindMadurai] text-base text-[#5C5C5C]"
+                class="font-normal font-[roboto] text-base text-[#5C5C5C]"
               >
                 ${serviceNumber}
               </p>
@@ -80,7 +80,7 @@ for (const callBtn  of callBtns) {
             <div>
               <p
                 id="local-time"
-                class="font-normal font-[madurai] text-[18px] text-[#5C5C5C]"
+                class="font-normal font-[roboto] text-[18px] text-[#5C5C5C]"
               >
                 ${localTime.time}
               </p>
