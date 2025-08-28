@@ -30,7 +30,7 @@
   <body class="mx-auto bg-[#f5fff6] font-[roboto]">
     <header class="font-[roboto] bg-white">
       <nav
-        class="max-w-11/12 mx-auto bg-white flex flex-col md:flex-row justify-between items-center lg:px-14 lg:py-6 md:p-4 p-2"
+        class="max-w-7xl mx-auto bg-white flex flex-col md:flex-row justify-between items-center lg:px-14 lg:py-6 md:p-4 p-4"
       >
         <div class="flex gap-3">
           <img class="size-15 md:size-20" src="./images/logo.png" alt="" />
@@ -48,7 +48,7 @@
           <!-- love btn -->
           <div
             id="love-main-btn"
-            class="bg-[#c4f3ce] bg-opacity-50 md:pr-7 md:pl-7 md:pt-3 md:pb-3 py-3 px-7 rounded-3xl text-xl"
+            class="bg-[#c4f3ce] bg-opacity-50 md:pr-7 md:pl-7 md:pt-3 md:pb-3 py-3 px-7 rounded-3xl md:text-xl text-base"
           >
             <p>
               <span>0 </span
@@ -61,7 +61,7 @@
           </div>
           <!-- star btn -->
           <div
-            class="bg-[#c4f3ce] bg-opacity-50 md:pr-7 md:pl-7 md:pt-3 md:pb-3 p-3 rounded-3xl text-xl"
+            class="bg-[#c4f3ce] bg-opacity-50 md:pr-7 md:pl-7 md:pt-3 md:pb-3 p-3 rounded-3xl md:text-xl text-base"
           >
             <p>
               <span id="total-coins">100 </span>
@@ -74,7 +74,7 @@
           </div>
           <!-- copy btn -->
           <div
-            class="bg-[#00A63E] md:pr-7 md:pl-7 md:pt-3 md:pb-3 p-3 rounded-3xl text-xl text-white"
+            class="bg-[#00A63E] md:pr-7 md:pl-7 md:pt-3 md:pb-3 p-3 rounded-3xl md:text-xl text-base text-white"
           >
             <p><span id="copy-main-btn">0 </span> Copy</p>
           </div>
@@ -83,7 +83,7 @@
     </header>
     <!-- banner -->
     <section
-      class="max-w-full bg-[radial-gradient(circle,_#006747,_#013223)] p-5 text-white flex flex-col justify-center items-center mt-1 mb-3"
+      class="max-w-full bg-[radial-gradient(circle,_#006747,_#013223)] p-5 text-white flex flex-col justify-center items-center mt-1"
     >
       <img class="md:size-24 size-18" src="./images/logo-dark.png" alt="" />
       <h1 class="font-bold font-[roboto] text-2xl text-center md:text-[40px]">
@@ -99,11 +99,11 @@
     <!-- all card section -->
 
     <section
-      class="max-w-11/12 mx-auto md:grid md:grid-cols-12 grid-cols-1 p-2 gap-3"
+      class="max-w-7xl mx-auto grid md:grid-cols-12 grid-cols-1 gap-3 mt-3 p-3"
     >
       <section class="md:col-span-9 col-span-1">
         <!-- row 1 -->
-        <section class="grid md:grid-cols-3 gap-3 grid-cols-1">
+        <section class="grid lg:grid-cols-3 gap-3 grid-cols-1">
           <!-- row-1 cart-1 -->
           <div class="card card-border bg-base-100 shadow-xl rounded-xl">
             <div class="card-body flex flex-col justify-between">
@@ -246,7 +246,7 @@
           </div>
         </section>
 
-        <section class="grid md:grid-cols-3 gap-3 grid-cols-1 mt-7">
+        <section class="grid lg:grid-cols-3 gap-3 grid-cols-1 mt-7">
           <!-- row-1 cart-1 -->
           <div class="card card-border bg-base-100 shadow-xl rounded-xl">
             <div class="card-body flex flex-col justify-between">
@@ -386,7 +386,7 @@
           </div>
         </section>
 
-        <section class="grid md:grid-cols-3 gap-3 grid-cols-1 mt-7">
+        <section class="grid lg:grid-cols-3 gap-3 grid-cols-1 mt-7">
           <!-- row-3 cart-1 -->
           <div class="card card-border bg-base-100 shadow-xl rounded-xl">
             <div class="card-body flex flex-col justify-between">
@@ -526,16 +526,16 @@
       </section>
 
       <aside
-        class="md:col-span-3 col-span-1 block bg-white rounded-xl p-6 shadow-xl"
+        class="lg:col-span-3 md:col-span-3 col-span-1 bg-white rounded-xl p-6 shadow-xl"
       >
-        <div class="flex justify-between items-center">
-          <div class="text-[20px] font-medium">
+        <div class="flex justify-between gap-2 items-center">
+          <div class="lg:text-xl text-base font-medium">
             <i class="fa-solid fa-clock text-[#5C5C5C]"></i> Call history
           </div>
           <div>
             <button
               id="clear-btn"
-              class="bg-[#00A63E] pr-7 pl-7 pt-3 pb-3 rounded-3xl text-xl text-white font-bold"
+              class="bg-[#00A63E] btn rounded-3xl text-base text-white"
             >
               Clear
             </button>
