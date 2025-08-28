@@ -41,7 +41,7 @@ for (const callBtn  of callBtns) {
 
         let totalCoins=Number(getElement('total-coins').innerText);
              if (totalCoins<20) {
-             return alert (`You don't have enough coins.`);
+             return alert (` ❌ You don't have enough coins.`);
               
 
     
@@ -108,16 +108,16 @@ for (const callBtn  of callBtns) {
      const copyBtns= getClassElement('copy-btn');
      for (const copyBtn  of  copyBtns) {
      copyBtn.addEventListener('click',function () {
+       const cardTitle=copyBtn.parentNode.parentNode.children[1].children[0].innerText;
      const serviceNumber=copyBtn.parentNode.parentNode.children[2].children[0].innerText ;
-     navigator.clipboard.writeText(serviceNumber)
-     .then ( function(){
-        alert(serviceNumber)
-     })
+     navigator.clipboard.writeText(serviceNumber);
+     
+        alert(`✔ ${cardTitle} hotline number  ${serviceNumber}  copied to clipboard `)
+    
    
      getElement('copy-main-btn').innerText++;
     
-}
-    )
+});
 }
 
 
