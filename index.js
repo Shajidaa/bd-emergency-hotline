@@ -62,7 +62,7 @@ for (const callBtn  of callBtns) {
 
            const newCart=document.createElement('div');
            newCart.innerHTML=`
-            <div class="flex justify-between items-center bg-[#f5fff6] p-4 mt-4">
+            <div class="flex justify-between gap-5 items-center bg-[#f5fff6] p-4 mt-4">
             <div>
               <h1
                 id="service-title"
