@@ -49,7 +49,7 @@ for (const callBtn  of callBtns) {
         
             let coins=totalCoins-20;
            getElement('total-coins').innerText=coins;
-           alert(`📞 calling ${cardSubTitle} ${serviceNumber}`);
+           alert(`📞 calling ${cardSubTitle} ${serviceNumber} ,,,`);
 
        //time
 
@@ -72,7 +72,7 @@ for (const callBtn  of callBtns) {
               </h1>
               <p
                 id="service-number "
-                class="font-normal font-[madurai] text-[18px] text-[#5C5C5C]"
+                class="font-normal font-[hindMadurai] text-base text-[#5C5C5C]"
               >
                 ${serviceNumber}
               </p>
@@ -105,23 +105,23 @@ for (const callBtn  of callBtns) {
 
     //copy function
 
- const copyBtns= getClassElement('copy-btn');
-for (const copyBtn  of  copyBtns) {
-    copyBtn.addEventListener('click',function () {
-    const serviceNumber=copyBtn.parentNode.parentNode.children[2].children[0].innerText ;
-    navigator.clipboard.writeText(serviceNumber)
-    .then ( function(){
+     const copyBtns= getClassElement('copy-btn');
+     for (const copyBtn  of  copyBtns) {
+     copyBtn.addEventListener('click',function () {
+     const serviceNumber=copyBtn.parentNode.parentNode.children[2].children[0].innerText ;
+     navigator.clipboard.writeText(serviceNumber)
+     .then ( function(){
         alert(serviceNumber)
-    })
+     })
    
-    getElement('copy-main-btn').innerText++;
+     getElement('copy-main-btn').innerText++;
     
 }
     )
 }
 
 
-
+// 
 
 
 
