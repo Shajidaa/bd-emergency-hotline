@@ -66,7 +66,7 @@ for (const callBtn  of callBtns) {
             <div>
               <h1
                 id="service-title"
-                class="font-semibold font-[roboto] text-base text-[#111111]"
+                class="font-medium font-[roboto] text-base text-[#111111]"
               >
                 ${cardTitle}
               </h1>
