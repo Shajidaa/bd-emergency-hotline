@@ -54,12 +54,12 @@ iii) dynamically added elements
 
 ## preventDefault() :
 
-            Prevents the default browser behavior of an element .
+Prevents the default browser behavior of an element .
 
 example: Stopping a form from submitting .
 
 ## stopPropagation() :
 
-          Prevents the event from bubbling up (or propagating ) to parent elements.
+Prevents the event from bubbling up (or propagating ) to parent elements.
 
 example: a button click inside a div won't trigger the div's click handler.
