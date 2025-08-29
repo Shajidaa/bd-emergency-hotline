@@ -4,18 +4,17 @@ Answer:
 
 ## getElementById() :
 
-Selects a single element by it id .If the id is found, It will return the actual DOM element
-.And If the id isn't found , it'll return null.
+Selects a single element by it id .Returns the actual DOM elements if found,otherwise returns null.
 
 ## getElementsByClassName() :
 
-Selects all elements a given class. Returns a live HTMLCollection.
+Selects all elements a given a specific class name. Returns a live HTMLCollection.
 
-It doesn't work directly forEach() method ;this is required Array.from().and automatically updates if the DOM changes.
+It doesn't support forEach() directly ;this is required Array.from().and automatically updates if the DOM changes.
 
 ## querySelector():
 
-Selects the first element that matches any CSS selector.
+Returns the first element that matches any CSS selector. It returns a single DOM element.
 
 ## querySelectorAll():
 
@@ -44,8 +43,8 @@ Answer:
 
 Event Delegation is a technique where we attach a single event listener to a parent element to handle events on its child elements . It is useful cause
 
-i) It improves performance - fewer event listeners,so less memory usage.
-ii)Keeps code cleaner
+i) It improves performance by reducing the number of event listeners,so less memory usage.
+ii)Keeps code cleaner and easier to maintain;
 iii) dynamically added elements
 
 ---
@@ -61,6 +60,6 @@ example: Stopping a form from submitting .
 
 ## stopPropagation() :
 
-Prevents the event from bubbling up (or propagating ) to parent elements.
+Stops the event from bubbling up (or propagating ) to parent elements.
 
 example: a button click inside a div won't trigger the div's click handler.
