@@ -62,17 +62,17 @@ for (const callBtn  of callBtns) {
 
            const newCart=document.createElement('div');
            newCart.innerHTML=`
-            <div class="flex justify-between gap-5 items-center bg-[#f5fff6] p-4 mt-4">
+            <div class="flex justify-between gap-5 items-center drop-shadow-sm  rounded-xl bg-[#f5fff6] p-4 mt-4">
             <div>
               <h1
                 id="service-title"
-                class="font-semibold font-[roboto] text-[18px] text-[#111111]"
+                class="font-semibold font-[roboto] text-base text-[#111111]"
               >
                 ${cardTitle}
               </h1>
               <p
                 id="service-number "
-                class="font-normal font-[roboto] text-base text-[#5C5C5C]"
+                class="font-normal font-[roboto] text-[14px] text-[#5C5C5C]"
               >
                 ${serviceNumber}
               </p>
@@ -80,7 +80,7 @@ for (const callBtn  of callBtns) {
             <div>
               <p
                 id="local-time"
-                class="font-normal font-[roboto] text-[18px] text-[#5C5C5C]"
+                class="font-normal font-[roboto] text-base text-[#5C5C5C]"
               >
                 ${localTime.time}
               </p>
