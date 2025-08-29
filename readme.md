@@ -25,21 +25,22 @@ It works directly forEach() method and doesn't automatically updates if the DOM 
 ---
 
 2.How do you create and insert a new element into the DOM?
-Answer:=>
+Answer:
 
 Use document.createElement('tagName') to create the element in memory.Set its content or attributes using properties like innerText,innerHTML ,id or className. It becomes part of the DOM only when inserted with methods like appendChild() or append()
 
 ---
 
 3.What is Event Bubbling and how does it work?
-=>
+Answer:
+
 Event bubbling is a type of event propagation in the DOM.when an event occurs on a child element ,it first triggers on that element and then propagates upward to its parent elements , all the way up to the document .It can be stopped using event.stopPropagation().
 
 ---
 
 4.What is Event Delegation in JavaScript? Why is it useful?
 
-=>
+Answer:
 
 Event Delegation is a technique where we attach a single event listener to a parent element to handle events on its child elements . It is useful cause
 
@@ -50,7 +51,7 @@ iii) dynamically added elements
 ---
 
 5.What is the difference between preventDefault() and stopPropagation() methods?
-=>
+Answer:
 
 ## preventDefault() :
 
